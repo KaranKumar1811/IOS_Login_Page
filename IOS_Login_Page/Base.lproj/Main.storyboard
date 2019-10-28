@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="IOS_Login_Page" customModuleProvider="target" sceneMemberID="viewController">
@@ -85,7 +85,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="gv0-Lh-Qq9"/>
+                    <navigationItem key="navigationItem" title="Login" id="gv0-Lh-Qq9">
+                        <barButtonItem key="rightBarButtonItem" title="Sign Up" id="4ja-xp-amb">
+                            <connections>
+                                <segue destination="hU3-4Y-VW5" kind="show" id="Vga-h2-42B"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="txtPassword" destination="ntF-WS-X2T" id="ZxJ-Yx-idu"/>
                         <outlet property="txtUserName" destination="xo3-6U-Njz" id="iJb-Tv-H3M"/>
@@ -93,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="87" y="-1106"/>
+            <point key="canvasLocation" x="875" y="-2873"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="JPZ-Kw-ORM">
@@ -184,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fte-O8-kxK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="86.956521739130437" y="-405.13392857142856"/>
+            <point key="canvasLocation" x="1738" y="-2873"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OUz-Eb-9A3">
@@ -202,7 +208,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epS-YN-ObT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="88" y="-1856"/>
+            <point key="canvasLocation" x="83" y="-2873"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Vga-h2-42B"/>
+    </inferredMetricsTieBreakers>
 </document>
