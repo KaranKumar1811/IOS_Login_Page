@@ -42,7 +42,6 @@ class LoginViewController: UIViewController
     }
     @IBAction func btnSignUp(_ sender: UIButton) {
          print("Sign Up")
-        
     }
     
     
